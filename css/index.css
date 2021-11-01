@@ -1,0 +1,132 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: hsl(204, 43%, 93%);
+    font-family:'Karla';
+    font-size: 16px;
+}
+.content
+{
+    max-width: 700px;
+    margin: auto;
+}
+
+.main-top
+{
+    padding: 20px;
+}
+
+.main
+{
+    border-radius: 10px;
+    margin: 70px;
+    background-color: ghostwhite;
+    box-shadow: 0px 0px 10px 0px gray;
+}
+
+.main-left-button
+{
+    border-bottom-left-radius: 10px;
+    background-color: rgb(30, 185, 185);
+}
+.main-right-button
+{
+    border-bottom-right-radius: 10px;
+    background-color: rgb(70, 200, 200);
+}
+
+.main-left-button, .main-right-button
+{
+    padding: 20px 30px;
+    width: -webkit-fill-available;
+}
+
+.main-button
+{
+    display: flex;
+}
+
+@media only screen and (max-width: 600px)
+{
+    .main
+    {
+        margin: 40px;
+    }
+    .main-button
+    {
+        flex-direction: column;
+    }
+    .main-left-button
+    { 
+        border-bottom-left-radius: 0;
+    }
+    .main-right-button
+    {
+        border-bottom-left-radius: 10px;
+    }
+}
+
+.main-left-button, .main-right-button
+{
+    color: white;
+}
+
+.main-top > p
+{
+    font-weight: bold;
+    line-height: 30px;
+    color:rgb(190, 190, 190);
+}
+
+.main-left-button > p, .main-right-button > span, 
+.main-left-button > h1 > span
+{
+    color: rgba(245, 245, 245, 0.7);
+}
+
+.main-right-button > span
+{
+    display: block;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.main-top > h2
+{
+    color: hsl(179, 62%, 43%);
+}
+
+.main-top > h3
+{
+    color: hsl(71, 73%, 54%);
+}
+
+.main-left-button > h1 > span
+{
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+.main-left-button > p
+{
+    margin: 0;
+}
+
+.main-left-button > a > input[type="button"]
+{
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(205, 230, 50);
+    color: rgb(255, 255, 255);
+}
+
+.main-left-button > a > input[type="button"]:hover
+{
+    background-color: rgb(205, 210, 50);
+}
